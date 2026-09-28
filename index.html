@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy – Stream Grid</title>
+    <style>
+      :root {
+        --bg: #15151a;
+        --panel: #1d1d23;
+        --line: #2d2d38;
+        --fg: #eaeaef;
+        --dim: #9898a8;
+        --accent: #6c8cff;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        padding: 48px 20px 80px;
+        background: var(--bg);
+        color: var(--fg);
+        font: 16px/1.65 system-ui, -apple-system, "Segoe UI", sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      main { max-width: 680px; margin: 0 auto; }
+      h1 { font-size: 30px; margin: 0 0 6px; letter-spacing: -0.02em; }
+      .date { color: var(--dim); font-size: 14px; margin-bottom: 36px; }
+      h2 { font-size: 19px; margin: 34px 0 10px; }
+      p { margin: 0 0 14px; }
+      ul { margin: 0 0 14px; padding-left: 22px; }
+      li { margin-bottom: 6px; }
+      code {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 4px;
+        padding: 1px 5px;
+        font-size: 14px;
+      }
+      .lead {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-left: 3px solid var(--accent);
+        border-radius: 8px;
+        padding: 16px 18px;
+        margin-bottom: 8px;
+      }
+      a { color: var(--accent); }
+      footer { margin-top: 44px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--dim); font-size: 14px; }
+      @media (prefers-color-scheme: light) {
+        :root { --bg: #fff; --panel: #f6f6f9; --line: #e2e2ea; --fg: #1a1a22; --dim: #666; --accent: #3355dd; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Privacy Policy</h1>
+      <div class="date">Stream Grid browser extension · last updated 28 September 2026</div>
+
+      <div class="lead">
+        <p style="margin: 0">
+          <strong>Stream Grid does not collect, store or transmit any personal data.</strong>
+          There are no servers, no accounts, no analytics and no third parties involved.
+        </p>
+      </div>
+
+      <h2>What the extension accesses</h2>
+
+      <p>
+        <strong>Page content.</strong> A content script runs on pages you visit in order to find
+        the <code>&lt;video&gt;</code> element and measure its size. It applies styles to hide the
+        layout around the player and stretch it to fill the window. It does not read page text,
+        form fields, passwords or cookies, and it does not modify anything besides the styling
+        described here.
+      </p>
+
+      <p>
+        <strong>Tabs.</strong> The extension reads the title, address and icon of tabs that contain
+        a video, so it can list them for you to choose from, and moves the tabs you pick into their
+        own windows. This information is only used to draw that list and is never stored beyond the
+        life of the popup.
+      </p>
+
+      <p>
+        <strong>Display information.</strong> The extension reads the size and working area of your
+        connected monitors in order to calculate where to position the tiled windows.
+      </p>
+
+      <h2>What is stored</h2>
+
+      <p>
+        The following settings are stored locally in your browser using
+        <code>chrome.storage.local</code>, and never leave your device:
+      </p>
+
+      <ul>
+        <li>the interface language you selected</li>
+        <li>the layout you last used</li>
+        <li>the window overlap value</li>
+        <li>whether the “cover taskbar” and “fill the window” options are on</li>
+        <li>which windows are currently tiled, so they can be restored</li>
+      </ul>
+
+      <p>You can remove all of it by uninstalling the extension.</p>
+
+      <h2>What is not done</h2>
+
+      <ul>
+        <li>No data is sent to any server.</li>
+        <li>No data is sold or shared with third parties.</li>
+        <li>No analytics, telemetry, tracking or advertising.</li>
+        <li>No remote code is loaded or executed.</li>
+        <li>Your browsing history is not read, recorded or transmitted.</li>
+      </ul>
+
+      <h2>Contact</h2>
+      <p>
+        Questions about this policy:
+        <a href="https://buymeacoffee.com/destroywrld">buymeacoffee.com/destroywrld</a>
+      </p>
+
+      <footer>Stream Grid is a browser extension that puts video into a window without toolbars and tiles those windows across a monitor.</footer>
+    </main>
+  </body>
+</html>
